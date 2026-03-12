@@ -58,7 +58,7 @@ const initialTasks: Task[] = [
     status: 'done',
     createdAt: '2026-03-12',
     completedAt: '2026-03-12',
-    report: '当前云环境因网络和只读文件系统限制，无法直接完成依赖安装和部署。推荐三种外网访问方案：\n1. **方案1：Github + Vercel（推荐免费）**\n   - 将当前仓库推送到你的Github\n   - Vercel导入仓库，指定根目录为 ai-dashboard，一键自动部署，自动分配域名，外网直接访问\n\n2. **方案2：Github Pages**\n   - 推送代码到Github，开启Github Pages，设置构建命令 npm run build，输出目录 out，免费部署\n\n3. **方案3：本地ngrok转发**\n   - 本地克隆代码，执行 npm install && npm run dev\n   - 用 ngrok http 3000 暴露端口，即可外网访问\n\n所有代码已经完整，只需要在自己环境安装依赖即可构建完成。'
+    report: '已配置好Github Pages部署所需配置：\n1. 修改next.config.ts，添加output: \'export\'，支持静态导出\n2. 添加.nojekyll文件，让Github Pages正确处理所有静态文件\n\n部署步骤：\n1. 将当前整个workspace仓库推送到你的Github\n2. 进入Github仓库 → Settings → Pages\n3. 配置：\n   - Source: Deploy from a branch\n   - Branch: 选择你推送的分支，目录选择 /(root)\n   - Build and deployment → GitHub Actions → Configure\n   - 复制下面配置到 .github/workflows/deploy.yml\n```yaml\nname: Deploy to GitHub Pages\non:\n  push:\n    branches: [master]\njobs:\n  build-and-deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Checkout\n        uses: actions/checkout@v4\n      - name: Install dependencies\n        run: cd ai-dashboard && npm ci\n      - name: Build\n        run: cd ai-dashboard && npm run build\n      - name: Deploy\n        uses: peaceiris/actions-gh-pages@v4\n        with:\n          github_token: ${{ secrets.GITHUB_TOKEN }}\n          publish_dir: ./ai-dashboard/out\n```\n4. 提交后Github Actions会自动构建部署，完成后就能在Github Pages访问了。'
   }
 ];
 
