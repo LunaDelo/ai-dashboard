@@ -32,6 +32,10 @@
     "obsidian": {
       "version": "1.0.0",
       "installedAt": 1773293532040
+    },
+    "tavily": {
+      "version": "1.0.0",
+      "installedAt": 1773293916074
     }
   }
 }

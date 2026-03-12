@@ -27,8 +27,8 @@
 7. ✅ frontend
 8. ✅ obsidian（markdown文档编写）
 
-## [FAILED] Tavily Web Search
-尝试所有slug格式 `tavily-search`/`arun-8687/tavily-search`/`arun-8687-tavily-search`，clawhub均返回"Skill not found"，仓库不存在或者slug错误；直接搜索Tavily触发clawhub速率限制，无法查询。
+## [DONE] Tavily Web Search
+正确slug为 `tavily`，添加--force参数成功安装，路径：/home/node/.openclaw/workspace/skills/tavily
 
 ## [PENDING] 剩余
 - 未提到get-tldr、essence-distiller、avatar-video-messages的安装需求，未安装
