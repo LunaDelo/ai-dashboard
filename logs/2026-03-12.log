@@ -28,7 +28,7 @@
 8. ✅ obsidian（markdown文档编写）
 
 ## [FAILED] Tavily Web Search
-尝试所有slug格式 `tavily-search`/`arun-8687/tavily-search`/`arun-8687-tavily-search`，clawhub均返回"Skill not found"，仓库不存在或者slug错误。
+尝试所有slug格式 `tavily-search`/`arun-8687/tavily-search`/`arun-8687-tavily-search`，clawhub均返回"Skill not found"，仓库不存在或者slug错误；直接搜索Tavily触发clawhub速率限制，无法查询。
 
 ## [PENDING] 剩余
 - 未提到get-tldr、essence-distiller、avatar-video-messages的安装需求，未安装
