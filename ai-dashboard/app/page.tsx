@@ -50,6 +50,15 @@ const initialTasks: Task[] = [
     description: '实现每天自动生成4-5项推进目标的任务，减少手动操作',
     status: 'todo',
     createdAt: '2026-03-12',
+  },
+  {
+    id: '7',
+    title: '部署看板到外网可访问',
+    description: '研究部署方案，让外网可以直接访问任务看板',
+    status: 'done',
+    createdAt: '2026-03-12',
+    completedAt: '2026-03-12',
+    report: '当前云环境因网络和只读文件系统限制，无法直接完成依赖安装和部署。推荐三种外网访问方案：\n1. **方案1：Github + Vercel（推荐免费）**\n   - 将当前仓库推送到你的Github\n   - Vercel导入仓库，指定根目录为 ai-dashboard，一键自动部署，自动分配域名，外网直接访问\n\n2. **方案2：Github Pages**\n   - 推送代码到Github，开启Github Pages，设置构建命令 npm run build，输出目录 out，免费部署\n\n3. **方案3：本地ngrok转发**\n   - 本地克隆代码，执行 npm install && npm run dev\n   - 用 ngrok http 3000 暴露端口，即可外网访问\n\n所有代码已经完整，只需要在自己环境安装依赖即可构建完成。'
   }
 ];
 
