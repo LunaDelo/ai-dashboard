@@ -30,6 +30,9 @@
 ## [DONE] Tavily Web Search
 正确slug为 `tavily`，添加--force参数成功安装，路径：/home/node/.openclaw/workspace/skills/tavily
 
+## [DONE] 配置TAVILY_API_KEY
+通过`openclaw config set`写入API Key：`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`，配置已保存，重启容器后生效。
+
 ## [PENDING] 剩余
 - 未提到get-tldr、essence-distiller、avatar-video-messages的安装需求，未安装
 
