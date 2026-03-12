@@ -1,0 +1,30 @@
+[
+  {
+    "id": "daily-2026-03-12-0",
+    "title": "\u8d77\u8349\u4e00\u7bc7\u7b26\u5408HKR\u7406\u8bba\u7684AI\u4e3b\u9898\u516c\u4f17\u53f7/\u5c0f\u7ea2\u4e66\u6587\u6848",
+    "description": "\u6309\u7167HKR\u65b9\u6cd5\u8bba\u521b\u4f5c\u4e00\u7bc7\u6587\u6848\u521d\u7a3f\uff0c\u6d4b\u8bd5\u5185\u5bb9\u65b9\u6cd5\u8bba",
+    "status": "todo",
+    "createdAt": "2026-03-12"
+  },
+  {
+    "id": "daily-2026-03-12-1",
+    "title": "\u8bfbAI\u9886\u57df\u4e66\u7c4d\uff0c\u6574\u7406\u8bfb\u4e66\u7b14\u8bb0",
+    "description": "\u5b8c\u6210\u6bcf\u6708\u8bfb\u4e66\u8ba1\u5212\uff0c\u6574\u7406\u6709\u7528\u77e5\u8bc6\u70b9\u6c89\u6dc0\u5230\u77e5\u8bc6\u5e93",
+    "status": "todo",
+    "createdAt": "2026-03-12"
+  },
+  {
+    "id": "daily-2026-03-12-2",
+    "title": "\u5b8c\u5584\u5de5\u4f5c\u6d41\u7a0b\u81ea\u52a8\u5316\u811a\u672c",
+    "description": "\u4f18\u5316\u73b0\u6709\u81ea\u52a8\u5316\u5de5\u5177\uff0c\u51cf\u5c11\u624b\u52a8\u64cd\u4f5c\uff0c\u63d0\u9ad8\u6548\u7387",
+    "status": "todo",
+    "createdAt": "2026-03-12"
+  },
+  {
+    "id": "daily-2026-03-12-3",
+    "title": "\u5b66\u4e60\u82f1\u8bed\uff0c\u7ec3\u4e60AI\u4e13\u4e1a\u8bcd\u6c47",
+    "description": "\u4fdd\u6301\u6bcf\u65e5\u82f1\u8bed\u7ec3\u4e60\uff0c\u79ef\u7d2fAI\u9886\u57df\u4e13\u4e1a\u82f1\u6587\u8bcd\u6c47",
+    "status": "todo",
+    "createdAt": "2026-03-12"
+  }
+]

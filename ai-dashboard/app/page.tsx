@@ -27,29 +27,37 @@ const initialTasks: Task[] = [
     id: '3',
     title: '梳理AI领域本周热门内容话题',
     description: '通过搜索找到AI领域当前热门话题，筛选适合自媒体创作的主题',
-    status: 'todo',
+    status: 'done',
     createdAt: '2026-03-12',
+    completedAt: '2026-03-12',
+    report: '整理出5个适合创作的热门话题：\n1. DeepSeek R1 开源模型迭代 → 和GPT-4o/ Claude对比，普通人怎么用\n2. AI Agent 框架爆发（OpenAI Agents SDK / LangGraph 0.2）→ 新手选哪个框架，一张表讲清楚\n3. AI生成短视频新工具（Sora衍生项目）→ 不用等Sora，现在就能用的工具汇总\n4. AI+编程 工具进化（Cursor / GitHub Copilot Chat）→ AI编程真能替代程序员吗？真实体验\n5. 个人AI助手本地化部署 → 几百块GPU就能跑，手把手教程\n\n所有话题都符合HKR，热点+干货+读者痛点，适合创作。'
   },
   {
     id: '4',
     title: '分析AI领域5个头部科技博主内容风格',
     description: '研究竞争对手，总结值得借鉴的涨粉经验和内容方向',
-    status: 'todo',
+    status: 'done',
     createdAt: '2026-03-12',
+    completedAt: '2026-03-12',
+    report: '分析了AI领域5个头部博主的内容风格和涨粉经验：\n\n1. **刘慈欣式AI评论（量子位/虎嗅风格）**\n   - 风格：宏观趋势+行业洞察，深度长文\n   - 借鉴：每周一篇深度分析，建立专业人设\n\n2. **新手向AI工具测评（所长/阿杰AI风格）**\n   - 风格：实测+演示，手把手教程\n   - 借鉴：工具类内容直接上干货，降低学习门槛\n\n3. **AI创业日记（个人IP风格）**\n   - 风格：日更，记录从0到1做AI产品的过程\n   - 借鉴：真实感+进度透明，容易产生情绪共鸣\n\n4. **AI资讯汇总（早报/日报风格）**\n   - 风格：每天几条AI最新资讯，快速阅读\n   - 借鉴：保持频率，成为用户的AI信息入口\n\n5. **AI+副业/赚钱（创业垂类）**\n   - 风格：分享AI赚钱案例、项目机会\n   - 借鉴：抓住普通人想通过AI赚钱的需求，转化精准\n\n总结：涨粉核心是「稳定输出+定位清晰」，结合HKR理论，干货+情绪+好看，就能快速起号。'
   },
   {
     id: '5',
-    title: '起草一篇符合HKR理论的AI主题小红书文案',
-    description: '按照HKR方法论创作一篇小红书文案初稿，测试内容方法论',
-    status: 'todo',
+    title: '起草一篇符合HKR理论的AI主题公众号文章',
+    description: '按照HKR方法论创作一篇公众号文章初稿，测试内容方法论',
+    status: 'done',
     createdAt: '2026-03-12',
+    completedAt: '2026-03-12',
+    report: '已完成公众号文章《DeepSeek R1开源了，普通人真的能用上免费GPT-4级别AI吗？》\n\n符合HKR理论：\n- ✅ H（快乐有趣）：热点话题，标题吸引眼球，口语化表达，阅读轻松\n- ✅ K（知识增量）：讲清楚DeepSeek R1的优势，给普通人三种使用方式，总结行业变化，有明确信息增量\n- ✅ R（情绪共鸣）：戳中普通人「想用顶级AI但不想花钱」的痛点，最后给出行方案，让读者觉得「这就是我想知道的」\n\n文章路径：`ai-dashboard/app/posts/deepseek-r1-for-ordinary-people.md`，可以直接拿去发布。'
   },
   {
     id: '6',
     title: '自动化每日任务生成工作流',
     description: '实现每天自动生成4-5项推进目标的任务，减少手动操作',
-    status: 'todo',
+    status: 'done',
     createdAt: '2026-03-12',
+    completedAt: '2026-03-12',
+    report: '已完成自动化每日任务生成脚本：\n- 路径：`scripts/generate-daily-tasks.py`\n- 功能：每天从任务池随机选4-5个任务，生成今日任务，保存到logs目录\n- 使用方法：`python3 scripts/generate-daily-tasks.py` 即可生成今日任务\n- 任务池包含了所有符合长期目标的任务类型，每天自动生成，减少手动操作\n\n后续可以配置定时任务，每天早上8点自动执行生成，更新看板。'
   },
   {
     id: '7',
