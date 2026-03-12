@@ -81,6 +81,15 @@ GitHub Actions已自动触发构建部署，完成后访问地址：`https://lun
 - 优化点：只读宿主环境下，优先使用openclaw CLI命令完成配置变更，避免工具参数解析问题；npm安装必须指定 `--cache /tmp/.npm --prefix <可写目录>` 绕过只读限制。
 - clawhub配置：必须设置 `XDG_CONFIG_HOME=/tmp/.config` 才能在只读环境下运行，token需要完整写入配置文件，修正token后成功绕过速率限制安装大部分技能；可疑技能需要添加`--force`参数安装。
 - obsidian：直接使用slug `obsidian` 即可成功安装，用户提供的带用户名格式是仓库地址，不是clawhub slug。
+- **Github Pages 部署经验总结（今天踩坑总结）**：
+  1. TailwindCSS v4在Next.js静态导出有兼容性问题，降级到v3稳定版能解决大部分样式问题
+  2. Github Pages部署在子路径，必须配置 `basePath` 和 `assetPrefix` 为仓库名，否则静态资源CSS/JS路径不对，导致没有样式
+  3. 文字对比度要足够，浅色文字（`text-gray-500`）在白色背景上看不清，要用更深的颜色（`text-gray-800`/`text-gray-900`）
+  4. 每一列都要限制最大高度+开启滚动，否则任务多了超出屏幕看不到
+  5. Github Actions部署需要给actions开通写入权限：`Settings → Actions → General → Workflow permissions` 选择 `Read and write permissions`，否则推送gh-pages分支会403
+  6. 缺少npm包会构建失败，比如autoprefixer，只要提示找不到模块就把它加到devDependencies
+  7. 生成的文章要支持直接访问，保存到`public/posts/`，在任务详情添加"查看完整文章"按钮，新标签打开markdown，github pages会自动渲染
+  8. 推送网络问题重试：当前云环境网络不稳定，推送超时可以多试几次，或者降低超时时间，一般第二次就能成功
 
 ## 系统异常
 - Error 1: ENOENT, mkdir /home/node/.npm
