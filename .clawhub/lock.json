@@ -28,6 +28,10 @@
     "self-improving-agent": {
       "version": "3.0.1",
       "installedAt": 1773289956390
+    },
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1773293532040
     }
   }
 }
