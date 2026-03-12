@@ -47,7 +47,8 @@ const initialTasks: Task[] = [
     status: 'done',
     createdAt: '2026-03-12',
     completedAt: '2026-03-12',
-    report: '已完成公众号文章《DeepSeek R1开源了，普通人真的能用上免费GPT-4级别AI吗？》\n\n符合HKR理论：\n- ✅ H（快乐有趣）：热点话题，标题吸引眼球，口语化表达，阅读轻松\n- ✅ K（知识增量）：讲清楚DeepSeek R1的优势，给普通人三种使用方式，总结行业变化，有明确信息增量\n- ✅ R（情绪共鸣）：戳中普通人「想用顶级AI但不想花钱」的痛点，最后给出行方案，让读者觉得「这就是我想知道」\n\n文章路径：`ai-dashboard/app/posts/deepseek-r1-for-ordinary-people.md`，可以直接拿去发布。'
+    articleUrl: '/ai-dashboard/posts/deepseek-r1-for-ordinary-people.md',
+    report: '已完成公众号文章《DeepSeek R1开源了，普通人真的能用上免费GPT-4级别AI吗？》\n\n符合HKR理论：\n- ✅ H（快乐有趣）：热点话题，标题吸引眼球，口语化表达，阅读轻松\n- ✅ K（知识增量）：讲清楚DeepSeek R1的优势，给普通人三种使用方式，总结行业变化，有明确信息增量\n- ✅ R（情绪共鸣）：戳中普通人「想用顶级AI但不想花钱」的痛点，最后给出行方案，让读者觉得「这就是我想知道」\n\n点击下方按钮，在新标签页打开完整文章阅读。'
   },
   {
     id: '6',
@@ -215,7 +216,17 @@ export default function Home() {
                 {selectedTask.report}
               </div>
             )}
-            <div className="mt-6 flex justify-end">
+            <div className="mt-6 flex gap-2 justify-end">
+              {selectedTask.articleUrl && (
+                <a 
+                  href={selectedTask.articleUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-500 text-white px-4 py-2 rounded"
+                >
+                  查看完整文章
+                </a>
+              )}
               <button 
                 className="bg-gray-200 px-4 py-2 rounded text-gray-900"
                 onClick={() => setSelectedTask(null)}

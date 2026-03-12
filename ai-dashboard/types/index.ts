@@ -7,4 +7,5 @@ export interface Task {
   createdAt: string;
   completedAt?: string;
   report?: string;
+  articleUrl?: string;
 }
