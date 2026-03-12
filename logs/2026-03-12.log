@@ -12,17 +12,27 @@
 耗时：<1分钟
 核心产出：成功批准wecom sender PanYong配对。
 
+## [PENDING] 批量安装skills
+核心痛点：
+1. skill-vetting：clawhub速率限制，无法获取，多次尝试不同安装方式失败
+2. 部分skill缺少明确仓库地址：self-improving-agent、find-skills、using-superpowers、reddit-readonly、frontend 未提供具体安装地址
+3. Tavily Web Search：直接npm安装URL返回无效归档，clawhub需要配置解决目录权限问题
+4. summarize：npm找不到对应可执行包，git克隆网络问题失败
+
 ## 进化日志
 - 首次尝试：创建/home/node/.npm → 失败，只读文件系统
 - 二次尝试：npm install --cache /tmp/.npm → 进程长时间无响应，终止
 - 三次尝试：npm config set cache /tmp/.npm → 无法写入/home/node/.npmrc → 失败
 - 四次修复：`mkdir -p /tmp/.npm && npm install @wecom/wecom-openclaw-plugin --cache /tmp/.npm --prefix /home/node/.openclaw` → 成功安装，避免修改全局npm配置，直接指定prefix到可写的openclaw目录。
 - 配置阶段：使用`openclaw config set` CLI命令直接写入配置，绕过gateway工具参数错误，配置成功后重启网关生效。
-- 优化点：只读宿主环境下，优先使用openclaw CLI命令完成配置变更，避免工具参数解析问题。
+- 优化点：只读宿主环境下，优先使用openclaw CLI命令完成配置变更，避免工具参数解析问题；npm安装必须指定 `--cache /tmp/.npm --prefix <可写目录>` 绕过只读限制。
+- 第三方技能安装：clawhub需要配置XDG_CONFIG_HOME到/tmp解决目录权限，但碰到clawhub速率限制，无法继续安装，需要等待或者手动提供skill包。
 
 ## 系统异常
 - Error 1: ENOENT, mkdir /home/node/.npm
 - Error 2: EROFS, cannot create /home/node/.npm
 - Error 3: EROFS, cannot open /home/node/.npmrc
 - Error 4: gateway config.patch 参数格式错误，raw必须为字符串
-- 修复路径：使用`openclaw config set` CLI直接配置，操作成功，已重启应用。
+- Error 5: clawhub 速率限制，无法获取skill-vetting
+- Error 6: 部分技能缺少安装地址
+- 修复路径：企微部分全部修复完成，批量安装skills碰到速率限制和地址缺失，需要勇哥补充信息。
