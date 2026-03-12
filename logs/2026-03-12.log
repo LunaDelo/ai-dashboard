@@ -4,15 +4,21 @@
 耗时：约4分钟
 核心产出：成功安装插件到 `/home/node/.openclaw/node_modules/@wecom/wecom-openclaw-plugin`，通过指定缓存目录到/tmp绕过只读文件系统限制。
 
+## [DONE] 配置企微channel
+耗时：约2分钟
+核心产出：成功添加wecom channel配置，包含botId和secret，已重启网关生效。
+
 ## 进化日志
 - 首次尝试：创建/home/node/.npm → 失败，只读文件系统
 - 二次尝试：npm install --cache /tmp/.npm → 进程长时间无响应，终止
 - 三次尝试：npm config set cache /tmp/.npm → 无法写入/home/node/.npmrc → 失败
 - 四次修复：`mkdir -p /tmp/.npm && npm install @wecom/wecom-openclaw-plugin --cache /tmp/.npm --prefix /home/node/.openclaw` → 成功安装，避免修改全局npm配置，直接指定prefix到可写的openclaw目录。
-- 优化点：对于只读宿主环境，npm安装插件必须指定 `--cache /tmp/.npm --prefix <可写目录>`，不需要修改全局配置即可绕过文件系统限制。
+- 配置阶段：使用`openclaw config set` CLI命令直接写入配置，绕过gateway工具参数错误，配置成功后重启网关生效。
+- 优化点：只读宿主环境下，优先使用openclaw CLI命令完成配置变更，避免工具参数解析问题。
 
 ## 系统异常
 - Error 1: ENOENT, mkdir /home/node/.npm
 - Error 2: EROFS, cannot create /home/node/.npm
 - Error 3: EROFS, cannot open /home/node/.npmrc
-- 修复路径：使用/tmp作为缓存，指定prefix到可写工作目录，无需修改全局配置，问题解决。
+- Error 4: gateway config.patch 参数格式错误，raw必须为字符串
+- 修复路径：使用`openclaw config set` CLI直接配置，操作成功，已重启应用。
