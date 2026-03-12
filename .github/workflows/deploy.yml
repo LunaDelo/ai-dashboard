@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install dependencies
-        run: cd ai-dashboard && npm ci
+        run: cd ai-dashboard && npm install
       - name: Build
         run: cd ai-dashboard && npm run build
       - name: Deploy
