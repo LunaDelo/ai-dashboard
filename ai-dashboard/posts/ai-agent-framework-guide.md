@@ -1,6 +1,6 @@
 ---
 title: AI Agent框架那么多，新手到底该怎么选？一张表讲明白
-cover: https://picsum.photos/id/0/1200/600
+cover: https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80
 ---
 
 # AI Agent框架那么多，新手到底该怎么选？一张表讲明白
@@ -15,7 +15,7 @@ cover: https://picsum.photos/id/0/1200/600
 
 今天这篇文章，我把目前主流的AI Agent框架都梳理一遍，适合谁，优缺点是什么，一句话给你讲清楚，看完你就知道该怎么选了。
 
-![AI Agent框架选择导图](https://picsum.photos/id/180/1000/500)
+![AI人工智能代码开发屏幕显示](https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80)
 
 ## 主流框架逐个说
 
@@ -138,7 +138,7 @@ cover: https://picsum.photos/id/0/1200/600
 | GPTs | 不会代码，个人定制 | ⭐ | ⭐⭐ | ⭐⭐⭐⭐ |
 | CrewAI | 多Agent协作 | ⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 
-![框架对比表](https://picsum.photos/id/160/1000/500)
+![AI编程框架对比表格代码](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80)
 
 ## 给新手的一句话选择建议
 

@@ -121,7 +121,7 @@ const initialTasks: Task[] = [
     status: 'done',
     createdAt: '2026-03-13',
     completedAt: '2026-03-13',
-    report: '已完成文章扩展和发布：\n- 将小红书文案扩展为适合公众号阅读的完整文章，增加了细节内容和对比表格\n- 保持图文结构，预留图片位置，符合公众号排版习惯\n- 修复了wenyan-cli硬编码配置路径问题，通过patch代码修改配置目录到可写路径\n- ✅ 已成功发布到微信公众号草稿箱！Media ID: `590rmia-7uiuX0qpdS3ZyuvcXiAJAzI6HAbBUX_rsYJ3F4l52BfmpH5Hslz3tfvD`\n\n文章标题：《AI Agent框架那么多，新手到底该怎么选？一张表讲明白》\n\n你现在可以登录微信公众号后台，在草稿箱找到这篇文章，直接编辑发布即可。',
+    report: '已完成文章扩展和发布：\n- 将小红书文案扩展为适合公众号阅读的完整文章，增加了细节内容和对比表格\n- 按照建议替换了所有图片为AI/编程相关的真实图片（来自Unsplash）：\n  - 封面：AI科技主题封面图\n  - 首图：AI Agent开发代码图\n  - 表格对比图：编程代码对比图\n- 修复了wenyan-cli硬编码配置路径问题，通过patch代码修改配置目录到可写路径\n- ✅ 已成功重新发布到微信公众号草稿箱！New Media ID: `590rmia-7uiuX0qpdS3Zyu2bqsChKfspWOv9Q6U867WlRQuXET_JWEsyrOoDAmM-`\n\n文章标题：《AI Agent框架那么多，新手到底该怎么选？一张表讲明白》\n\n你现在可以登录微信公众号后台，在草稿箱找到这篇更新后的文章，直接编辑发布即可。',
   },
 ];
 
