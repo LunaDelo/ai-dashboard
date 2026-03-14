@@ -123,6 +123,42 @@ const initialTasks: Task[] = [
     completedAt: '2026-03-13',
     report: '已完成文章扩展和发布：\n- 将小红书文案扩展为适合公众号阅读的完整文章，增加了细节内容和对比表格\n- 按照建议替换了所有图片为AI/编程相关的真实图片（来自Unsplash）：\n  - 封面：AI科技主题封面图\n  - 首图：AI Agent开发代码图\n  - 表格对比图：编程代码对比图\n- 修复了wenyan-cli硬编码配置路径问题，通过patch代码修改配置目录到可写路径\n- ✅ 已成功重新发布到微信公众号草稿箱！New Media ID: `590rmia-7uiuX0qpdS3Zyu2bqsChKfspWOv9Q6U867WlRQuXET_JWEsyrOoDAmM-`\n\n文章标题：《AI Agent框架那么多，新手到底该怎么选？一张表讲明白》\n\n你现在可以登录微信公众号后台，在草稿箱找到这篇更新后的文章，直接编辑发布即可。',
   },
+  // 2026-03-14 今日任务
+  {
+    id: '14',
+    title: '起草一篇符合HKR理论的AI主题公众号/小红书文案',
+    description: '按照HKR方法论创作一篇文案初稿，测试内容方法论',
+    status: 'todo',
+    createdAt: '2026-03-14',
+  },
+  {
+    id: '15',
+    title: '构思AI产品新功能',
+    description: '根据用户反馈，构思产品新功能，完善产品 roadmap',
+    status: 'todo',
+    createdAt: '2026-03-14',
+  },
+  {
+    id: '16',
+    title: '研究潜在的商业合作伙伴',
+    description: '找到AI领域5个可以合作的博主，整理联系方式和合作切入点',
+    status: 'todo',
+    createdAt: '2026-03-14',
+  },
+  {
+    id: '17',
+    title: '分析前一天发表的文章数据和总结',
+    description: '看阅读、点赞、涨粉数据，总结经验教训，优化下一篇内容',
+    status: 'todo',
+    createdAt: '2026-03-14',
+  },
+  {
+    id: '18',
+    title: '学习英语，练习AI专业词汇',
+    description: '保持每日英语练习，积累AI领域专业英文词汇',
+    status: 'todo',
+    createdAt: '2026-03-14',
+  },
 ];
 
 export default function Home() {
