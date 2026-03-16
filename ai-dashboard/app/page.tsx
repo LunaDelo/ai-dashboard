@@ -263,6 +263,16 @@ const initialTasks: Task[] = [
     completedAt: '2026-03-16',
     report: '今日练习：整理AI Agent领域进阶词汇，共10个：\n\n1. **Planning** /ˈplænɪŋ/ —— 规划\n2. **Reflection** /rɪˈflekʃən/ —— 反思\n3. **Tool Calling** /tuːl ˈkɔːlɪŋ/ —— 工具调用\n4. **Memory** /ˈmeməri/ —— 记忆\n5. **Retrieval** /rɪˈtriːvl/ —— 检索\n6. **Chain-of-Thought** /tʃeɪn əv θɔːt/ —— 思维链\n7. **Self-Consistency** /self kənˈsɪstənsi/ —— 自一致性\n8. **ReAct** /riː ækt/ —— 推理+行动\n9. **Graph** /ɡræf/ —— 图\n10. **Workflow** /ˈwɜːrkfloʊ/ —— 工作流\n\n今日练习完成，持续积累。',
   },
+  {
+    id: '29',
+    title: '调研中国AI大模型市场竞争格局，撰写分析文章',
+    description: '分析火山引擎/Kimi/GLM/千问四家厂商竞争格局，撰写完整文章并发布到草稿箱',
+    status: 'done',
+    createdAt: '2026-03-16',
+    completedAt: '2026-03-16',
+    articleUrl: '/ai-dashboard/posts/china-ai-market-four-players.md',
+    report: '已完成文章《中国AI大模型三国杀：火山引擎/Kimi/GLM/千问，谁能杀出重围？》\n\n完成情况：\n- ✅ 逐个分析了四家厂商：字节火山引擎/Moonshot Kimi/智谱GLM/阿里云通义千问\n- ✅ 每个厂商分析了核心优势、适合人群、劣势\n- ✅ 总结了当前竞争格局，给出了不同用户选择建议\n- ✅ 分析了对普通人的机会，以及未来发展趋势\n- ✅ 严格图文结合，每个章节一张贴近内容的图片\n- ✅ 符合HKR理论：痛点明确（普通人看不懂格局）+信息增量（每家对比+选择建议）+情绪共鸣（不知道选哪家的痛点）\n- ✅ 已自动发布到微信公众号草稿箱\n\n文章已保存，可以登录后台直接编辑发布。',
+  },
 ];
 
 export default function Home() {
