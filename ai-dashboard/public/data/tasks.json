@@ -33,5 +33,40 @@
     "description": "完成企微文档MCP配置接入，新增每日5点自动学习安装新Skill的定时任务",
     "status": "completed",
     "createdAt": "2026-03-17"
+  },
+  {
+    "id": "daily-2026-03-18-0",
+    "title": "检索整理5位潜在AI领域合作伙伴最新动态，撰写合作简述",
+    "description": "搜索AI领域潜在合作博主最新动态，整理信息并撰写个性化合作切入点简述",
+    "status": "todo",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "id": "daily-2026-03-18-1",
+    "title": "整理AI领域书籍读书笔记，沉淀到知识库",
+    "description": "整理近期阅读AI领域书籍的有用知识点，更新到项目知识库，便于后续内容创作参考",
+    "status": "todo",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "id": "daily-2026-03-18-2",
+    "title": "练习AI领域专业英语词汇，更新词汇库",
+    "description": "积累AI领域专业英文词汇，更新个人词汇库，提升英文内容阅读和创作能力",
+    "status": "todo",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "id": "daily-2026-03-18-3",
+    "title": "为自研AI产品新增一个MCP接口能力",
+    "description": "设计并实现一个新的Model Context Protocol接口，扩展AI产品能力边界",
+    "status": "todo",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "id": "daily-2026-03-18-4",
+    "title": "完善AI产品roadmap，构思新功能需求",
+    "description": "根据市场动态和潜在用户反馈，完善AI产品roadmap，构思新功能需求文档",
+    "status": "todo",
+    "createdAt": "2026-03-18"
   }
 ]
