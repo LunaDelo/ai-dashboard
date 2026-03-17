@@ -1,37 +1,37 @@
 [
   {
     "id": "daily-2026-03-17-0",
-    "title": "\u6293\u53d6\u540c\u9886\u57df10\u4e2a\u5934\u90e8\u8d26\u53f724\u5c0f\u65f6\u70ed\u6587\uff0c\u5206\u6790HKR\u6784\u6210",
-    "description": "\u901a\u8fc7\u722c\u866b/API\u83b7\u53d6AI\u9886\u57df\u5934\u90e8\u8d26\u53f7\u6700\u65b0\u70ed\u6587\uff0c\u5206\u6790\u6bcf\u7bc7\u6587\u7ae0\u6ee1\u8db3HKR\u4e09\u539f\u5219\u7684\u6bd4\u4f8b\uff0c\u8f93\u51fa\u5206\u6790\u62a5\u544a",
+    "title": "练习AI领域专业英语词汇，更新词汇库",
+    "description": "积累AI领域专业英文词汇，更新个人词汇库，提升英文内容阅读和创作能力",
     "status": "todo",
     "createdAt": "2026-03-17"
   },
   {
     "id": "daily-2026-03-17-1",
-    "title": "\u81ea\u52a8\u5316\u6293\u53d6\u7c89\u4e1d\u8bc4\u8bba\uff0c\u6574\u7406\u7528\u6237\u9700\u6c42",
-    "description": "\u901a\u8fc7\u5de5\u5177\u81ea\u52a8\u5316\u6293\u53d6\u5404\u5e73\u53f0\u7c89\u4e1d\u8bc4\u8bba\u548c\u79c1\u4fe1\uff0c\u6574\u7406\u6c47\u603b\u7528\u6237\u9700\u6c42\u548c\u53cd\u9988",
+    "title": "自动化抓取粉丝评论，整理用户需求",
+    "description": "通过工具自动化抓取各平台粉丝评论和私信，整理汇总用户需求和反馈",
     "status": "todo",
     "createdAt": "2026-03-17"
   },
   {
     "id": "daily-2026-03-17-2",
-    "title": "\u4f18\u5316AI\u770b\u677f\u524d\u7aef\uff0c\u5b8c\u5584\u4efb\u52a1\u5c55\u793a\u4ea4\u4e92",
-    "description": "\u4f18\u5316ai-dashboard Next.js\u524d\u7aef\u9875\u9762\uff0c\u63d0\u5347\u4efb\u52a1\u5c55\u793a\u6e05\u6670\u5ea6\u548c\u4ea4\u4e92\u4f53\u9a8c",
+    "title": "优化AI看板前端，完善任务展示交互",
+    "description": "优化ai-dashboard Next.js前端页面，提升任务展示清晰度和交互体验",
     "status": "todo",
     "createdAt": "2026-03-17"
   },
   {
     "id": "daily-2026-03-17-3",
-    "title": "\u68c0\u7d22\u6574\u74065\u4f4d\u6f5c\u5728AI\u9886\u57df\u5408\u4f5c\u4f19\u4f34\u6700\u65b0\u52a8\u6001\uff0c\u64b0\u5199\u5408\u4f5c\u7b80\u8ff0",
-    "description": "\u641c\u7d22AI\u9886\u57df\u6f5c\u5728\u5408\u4f5c\u535a\u4e3b\u6700\u65b0\u52a8\u6001\uff0c\u6574\u7406\u4fe1\u606f\u5e76\u64b0\u5199\u4e2a\u6027\u5316\u5408\u4f5c\u5207\u5165\u70b9\u7b80\u8ff0",
+    "title": "整理AI领域书籍读书笔记，沉淀到知识库",
+    "description": "整理近期阅读AI领域书籍的有用知识点，更新到项目知识库，便于后续内容创作参考",
     "status": "todo",
     "createdAt": "2026-03-17"
   },
   {
-    "id": "daily-2026-03-17-4",
-    "title": "\u5b8c\u5584AI\u4ea7\u54c1roadmap\uff0c\u6784\u601d\u65b0\u529f\u80fd\u9700\u6c42",
-    "description": "\u6839\u636e\u5e02\u573a\u52a8\u6001\u548c\u6f5c\u5728\u7528\u6237\u53cd\u9988\uff0c\u5b8c\u5584AI\u4ea7\u54c1roadmap\uff0c\u6784\u601d\u65b0\u529f\u80fd\u9700\u6c42\u6587\u6863",
-    "status": "todo",
+    "id": "config-2026-03-17-0",
+    "title": "接入企业微信文档MCP服务，新增每日学习Skill任务",
+    "description": "完成企微文档MCP配置接入，新增每日5点自动学习安装新Skill的定时任务",
+    "status": "completed",
     "createdAt": "2026-03-17"
   }
 ]
