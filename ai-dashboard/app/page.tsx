@@ -10,11 +10,11 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/ai-dashboard/app/data/tasks.json')
+    fetch('/ai-dashboard/data/tasks.json')
       .then(res => res.json())
       .then(data => {
         const fetchInitialTasks = async () => {
-          const response = await fetch('/ai-dashboard/app/data/initial-tasks.json');
+          const response = await fetch('/ai-dashboard/data/initial-tasks.json');
           if (response.ok) {
             const initial = await response.json();
             setTasks([...initial, ...data]);
